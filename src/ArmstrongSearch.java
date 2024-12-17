@@ -19,9 +19,10 @@ public class ArmstrongSearch {
         int total = 0;
         ArmstrongSearch search = new ArmstrongSearch();
         for (long test = 0; test < max; ++test) {
-            if (search.isArmstrongNumber(test))
+            if (search.isArmstrongNumber(test)) {
                 System.out.println(test + " is an armstrong number");
                 ++total;
+            }
         }
 
         System.out.println("There are " + total + " armstrong numbers less than " + max);
